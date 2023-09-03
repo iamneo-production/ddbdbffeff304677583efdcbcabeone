@@ -18,5 +18,17 @@
     width:30%;
     height:35%;
     display:flex;
-    
+    justify-content: center;
+    align-items: center;
+}
+.square p{
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+h1{
+    text-align: center;;
+}
+.notClicked:hover{
+    background-color: grey;
 }
