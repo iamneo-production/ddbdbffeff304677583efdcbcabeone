@@ -68,5 +68,13 @@ class ClassSquare{
 
 }
 for(let index=0;index<9;index++){
-    const div=document.create
+    const div=document.createElement("div");
+    div.classList.add("sqaure","notClicked");
+    const square=new ClassSquare(div,index);
+    div.onclick=function (){
+        square.clicked();
+    };
+    div.appendChild(document.createElement("p"));
+    container.appendChild(div);
+    squareArray.push(square);
 }
