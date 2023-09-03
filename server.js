@@ -38,6 +38,23 @@ function wonGame(){
         const [a,b,c]=lines[i];
         if(squareArray[a].state!==""&&
         squareArray[a].state===squareArray[b].state&&
-        squareArray[a].state===)
+        squareArray[a].state===squareArray[c].state){
+            return true;
+        }
     }
+    return false;
+}
+class ClassSquare{
+    constructor(element,index){
+        this.element=element;
+        this.index=index;
+        this.state="";
+    }
+    clicked(){
+        this.state=nextMove;
+        this.element.classList.remove("notClicked");
+        this.element.onclick=function ()
+    }
+
+
 }
