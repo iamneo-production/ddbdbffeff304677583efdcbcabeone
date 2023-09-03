@@ -53,8 +53,20 @@ class ClassSquare{
     clicked(){
         this.state=nextMove;
         this.element.classList.remove("notClicked");
-        this.element.onclick=function ()
+        this.element.onclick=function (){
+            return false;
+        };
+        this.element.querySelector("p").innerHTML=this.state;
+        if(wonGame())
+        return gamerOver("the winner is player"+this.state);
+        if(isDraw())
+        return gameOver("it is a draw");
+        nextMove=="X"?(nextMove="O"):(nextMove="X");
+
     }
 
 
+}
+for(let index=0;index<9;index++){
+    const div=document.create
 }
